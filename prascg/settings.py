@@ -87,9 +87,14 @@ WSGI_APPLICATION = 'prascg.wsgi.application'
 #     }
 # }
 DATABASES = {
+    # 'default': dj_database_url.config(
+    #     # Replace this value with your local database's connection string.
+    #     default='postgresql://postgres:1234@localhost:5432/render',
+    #     conn_max_age=600
+    # )
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:1234@localhost:5432/render',
+        default='postgresql://postgress:Ac8ASL5HcRp6Mur5qoHpYyUrGcsVwXuC@dpg-d2fivu3uibrs73a1qtf0-a/renderdb_bqou',
         conn_max_age=600
     )
 }

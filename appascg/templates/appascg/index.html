@@ -22,6 +22,24 @@
                 <h1 class="display-4">Hola mundo!</h1>
             </div>
         </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>USUARIO</th>
+                    <th>CORREO</th>
+                </tr>
+            </thead>
+            <TBody>
+                {% for usu in USUARIO %}
+                <tr>
+                    <th>{{ usu.id_usuario }}</th>
+                    <th>{{ usu.usuario }}</th>
+                    <th>{{ usu.correo }}</th>
+                </tr>
+                {% endfor %}
+            </TBody>
+        </table>
     </main>
 </body>
 
